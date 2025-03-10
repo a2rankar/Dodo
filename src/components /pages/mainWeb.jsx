@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function MainWeb() {
     return (
-      <div className='c))ontainer'>
+      <div className='container'>
         <div className='header'>
           <div className='logo'>
             <img src={logo} alt="logotip" />
