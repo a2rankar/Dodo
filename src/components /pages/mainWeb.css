@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+  border: 2px solid red;  
+  align-items: center;
+
+}
+.logo {
+    text-align: center;
+    border: 2px solid black;
+    width: 20%;
+}
+
+   
+
+.card {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы по вертикали */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+    justify-content: space-around; /* Пространство между элементами */
+    width: 22%;
+    word-wrap: break-word;
+    border-radius: 20px;
+    height: 450px; /* Установим фиксированную высоту для карточки */
+    padding: 20px; /* Внешний отступ для карточки */
+    margin: 20px;
+    border: 2px solid black; /* Пример границы для карточки */
+    box-sizing: border-box; /* Чтобы padding не выходил за рамки */
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card p {
+
+    margin-bottom:0px; /* Отступ от описания к кнопкам */
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    margin-top: 0px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .card button#basket {
+    background-color: #28a745; /* Разный цвет для другой кнопки */
+  }
