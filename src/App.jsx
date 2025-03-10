@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainWeb />} />
-        {/* <Route path="/secondPsge" element={<SecondPage/>} /> */}
+    
       </Routes>
     </Router>
   )
