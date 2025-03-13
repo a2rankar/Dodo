@@ -11,21 +11,15 @@ const bot = new TelegramBot("7708222376:AAG8eYmUWdKP5-1b-xR9bZXhYX1t9SyTP-g", { 
 
 export default function handler(req, res) {
     if (req.method === "POST") {
-        console.log("Received Telegram request:", req.body);
-        bot.processUpdate(req.body);
+        console.log("Incoming update:", req.body);
         res.status(200).send("OK");
     } else {
         res.status(405).send("Method Not Allowed");
     }
 }
 
+
 const webhookUrl = `https://dodo-2jxs.vercel.app/api/bot`;
 bot.setWebHook(webhookUrl)
     .then(() => console.log(`Webhook set to ${webhookUrl}`))
     .catch(err => console.error("Error setting webhook:", err));
-    
-    app.post("/api/bot", (req, res) => {
-        console.log("Incoming update:", req.body);
-        res.sendStatus(200);
-    });
-    
